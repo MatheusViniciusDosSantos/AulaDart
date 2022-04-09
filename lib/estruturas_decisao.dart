@@ -93,6 +93,31 @@ void verificarAprovacao() {
     print("Reprovado por falta.");
   } else if (nota < 6 && presenca >= 60) {
     print("Reprovado por conceito.");
+  } else if (nota < 6.0 && presenca < 60) {
+    print("Reprovado por falta e conceito.");
+  } else {
+    print("Algo inesperado aconteceu, finalizando programa.");
   }
-  //Terminar
+}
+
+void notasCorretas() {
+  print("Digite sua nota: ");
+  var notaString = stdin.readLineSync();
+  try {
+    double nota = double.parse(notaString);
+    if (nota < 6) {
+      print("Digite a nota da recuperação: ");
+      var recuperacaoString = stdin.readLineSync();
+      var recuperacao = double.parse(recuperacaoString);
+      if ((nota + recuperacao)/2 < 6) {
+        print("Reprovado.");
+      } else {
+        print("Aprovado.");
+      }
+    } else {
+      print("Aprovado");
+    }
+  } catch (e) {
+    print("Digite a nota corretamente. \r\nExemplo: 7");
+  }
 }
