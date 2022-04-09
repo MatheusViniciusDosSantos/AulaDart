@@ -1,7 +1,7 @@
-import 'package:dart_application/dart_application.dart' as dart_application;
-import 'package:dart_application/primeiro.dart' as primeiro;
-import 'package:dart_application/dados_aluno_aula.dart' as dadosAlunosAula;
-import 'packge:dart_application/estruturas_repeticao' as estruturasRepeticao
+// import 'package:dart_application/dart_application.dart' as dart_application;
+// import 'package:dart_application/primeiro.dart' as primeiro;
+// import 'package:dart_application/dados_aluno_aula.dart' as dadosAlunosAula;
+import '../lib/estruturas_repeticao.dart' as estruturasRepeticao;
 
 // ignore: slash_for_doc_comments
 /**

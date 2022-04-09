@@ -104,12 +104,12 @@ void notasCorretas() {
   print("Digite sua nota: ");
   var notaString = stdin.readLineSync();
   try {
-    double nota = double.parse(notaString);
+    double nota = double.parse(notaString!);
     if (nota < 6) {
       print("Digite a nota da recuperação: ");
       var recuperacaoString = stdin.readLineSync();
-      var recuperacao = double.parse(recuperacaoString);
-      if ((nota + recuperacao)/2 < 6) {
+      var recuperacao = double.parse(recuperacaoString!);
+      if ((nota + recuperacao) / 2 < 6) {
         print("Reprovado.");
       } else {
         print("Aprovado.");
