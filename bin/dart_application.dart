@@ -1,6 +1,7 @@
 import 'package:dart_application/dart_application.dart' as dart_application;
 import 'package:dart_application/primeiro.dart' as primeiro;
 import 'package:dart_application/dados_aluno_aula.dart' as dadosAlunosAula;
+import 'packge:dart_application/estruturas_repeticao' as estruturasRepeticao
 
 // ignore: slash_for_doc_comments
 /**
@@ -26,5 +27,6 @@ enquanto for necessário, solicite as notas e as faltas das disciplinas do curso
 void main(List<String> arguments) {
   //print('Hello world: ${dart_application.calculate()}!');
   //primeiro.minhaFuncao();
-  dadosAlunosAula.solicitarDados();
+  // dadosAlunosAula.solicitarDados();
+  estruturasRepeticao.tresAlunos();
 }
